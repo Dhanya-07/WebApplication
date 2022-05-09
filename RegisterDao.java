@@ -35,7 +35,6 @@ public class RegisterDao {
 	public String Insert(Member m,String req)
 	{
 	  LoadDriver(driver);
-		System.out.println("insert");
 		Connection con=connect();
 		String res="Successfully Submitted";
 		if(req!=null) {
@@ -122,6 +121,7 @@ public class RegisterDao {
 				e.printStackTrace();
 			}
 	}
+	//Director
 	
 	public int[] Rank_Dir()
 	{
@@ -129,7 +129,6 @@ public class RegisterDao {
 		String sql="";int c=1;
 		try {
 			LoadDriver(driver);
-			System.out.println("stat");
 			Connection con=connect();
 			
 			int v;
